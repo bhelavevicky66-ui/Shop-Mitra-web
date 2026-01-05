@@ -823,19 +823,22 @@
   <div id="productModal" style="margin-bottom: 5%; justify-content: center;" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <div class="product-details"
-        style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-        <img id="modalImage" src="" alt="Product Image" style="max-width:300px; margin: 5%; border-radius:8px;">
-        <h2 id="modalTitle"></h2>
-        <p class="price" id="modalPrice"></p>
-        <p id="modalDescription"></p>
-        <div class="quantity-selector">
-          <button onclick="changeQuantity(-1)">-</button>
-          <span id="quantity">1</span>
-          <button onclick="changeQuantity(1)">+</button>
+      <div class="modal-body-container">
+        <div class="modal-image-container">
+          <img id="modalImage" src="" alt="Product Image">
         </div>
-        <p id="totalPrice" class="total-price">Total: ₹0.00</p>
-        <button onclick="addToCart()" class="add-to-cart" style="margin-bottom: 10%;">Add to Cart</button>
+        <div class="modal-info-container">
+          <h2 id="modalTitle"></h2>
+          <p class="price" id="modalPrice"></p>
+          <p id="modalDescription"></p>
+          <div class="quantity-selector">
+            <button onclick="changeQuantity(-1)">-</button>
+            <span id="quantity">1</span>
+            <button onclick="changeQuantity(1)">+</button>
+          </div>
+          <p class="total-price" id="totalPrice"></p>
+          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        </div>
       </div>
     </div>
   </div>
