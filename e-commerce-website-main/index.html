@@ -872,7 +872,7 @@
       <div class="footer-section newsletter">
         <h4>Stay Updated</h4>
         <p>Subscribe for the latest offers!</p>
-        <form onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <form onsubmit="event.preventDefault(); alert('Subscribed!'); this.reset();">
           <input type="email" placeholder="Your email address" required>
           <button type="submit">Subscribe</button>
         </form>
