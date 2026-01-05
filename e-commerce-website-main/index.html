@@ -844,32 +844,43 @@
   </div>
 
   <!-- Footer -->
-  <footer>
+  <!-- Footer -->
+  <footer id="contact">
     <div class="footer-content">
-      <div>
-        <h3>Online Shop</h3>
-        <p>🛒</p>
+      <div class="footer-section brand">
+        <h3>Shop Mitra</h3>
+        <p>Discover the best products at unbeatable prices. Your style, your choice.</p>
       </div>
-      <div>
+
+      <div class="footer-section links">
         <h4>Quick Links</h4>
-        <section id="contact">
-          <h4 id="contact-heading">📞 Contact Me</h4>
-          <div class="contact-container">
-            <p><strong>📩 Email:</strong> <a href="mailto:bhelavevicky66@gmail.com">vickybhelave@gmail.com</a></p>
-            <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/vicky-bhelave-788718372"
-                target="_blank">vicky-bhelave</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/__vic_ky__302"
-                target="_blank">@__vic_ky__302</a></p>
-          </div>
-        </section>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div>
+
+      <div class="footer-section contact">
+        <h4>Contact Us</h4>
+        <p><span>📩</span> <a href="mailto:vickybhelave@gmail.com">vickybhelave@gmail.com</a></p>
+        <p><span>🔗</span> <a href="https://www.linkedin.com/in/vicky-bhelave-788718372" target="_blank">LinkedIn</a>
+        </p>
+        <p><span>📸</span> <a href="https://www.instagram.com/__vic_ky__302" target="_blank">Instagram</a></p>
+      </div>
+
+      <div class="footer-section newsletter">
         <h4>Stay Updated</h4>
-        <input type="email" placeholder="Your email">
-        <button>Subscribe</button>
+        <p>Subscribe for the latest offers!</p>
+        <form onsubmit="event.preventDefault(); alert('Subscribed!');">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
     </div>
-    <p class="footer-note">© 2025 Online Shop | Made with by Vicky Bhelave</p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Shop Mitra | Made with ❤️ by Vicky Bhelave</p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
