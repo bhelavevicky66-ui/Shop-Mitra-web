@@ -177,5 +177,21 @@
         console.log(`Buy Now button ${index + 1} registered with onclick:`, button.onclick);
         button.addEventListener('click', () => showProductModal(button)); // Ensure event binding
       });
+
+      // Carousel Logic
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('.carousel-slide');
+      
+      window.moveCarousel = function(n) {
+        if (!slides.length) return;
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + n + slides.length) % slides.length;
+        slides[currentSlide].classList.add('active');
+      }
+
+      // Auto play
+      setInterval(() => {
+        window.moveCarousel(1);
+      }, 5000);
     });
   })();

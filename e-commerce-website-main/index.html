@@ -12,9 +12,19 @@
 <body>
   <!-- Hero Section -->
   <header class="hero">
+    <div class="carousel-container">
+      <div class="carousel-slide active" style="background-image: url('images/hero-bg.png');"></div>
+      <div class="carousel-slide" style="background-image: url('images/Smart Watch.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/Bluetooth Headphones.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/Digital Watch.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/Women Casual Shoes 3.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('images/Big Study Table .jpg');"></div>
+    </div>
     <div class="hero-overlay">
       <h1>Shop Mitra</h1>
     </div>
+    <button class="carousel-btn prev" onclick="moveCarousel(-1)">&#10094;</button>
+    <button class="carousel-btn next" onclick="moveCarousel(1)">&#10095;</button>
   </header>
 
   <!-- Order Confirmation Popup -->
@@ -35,7 +45,8 @@
   <section class="menu">
     <h2>Welcome <span id="welcome">to Shop Mitra</span></h2>
     <div class="menu-grid">
-      <div class="dish-card" data-product-id="1" data-description="A stylish smartwatch with fitness tracking and notifications.">
+      <div class="dish-card" data-product-id="1"
+        data-description="A stylish smartwatch with fitness tracking and notifications.">
         <img src="Smart Watch.jpg" alt="Smart Watch">
         <div class="product-info">
           <h3>Smart Watch</h3>
@@ -43,7 +54,8 @@
           <button onclick="showProductModal(this)">Buy Now</button>
         </div>
       </div>
-      <div class="dish-card" data-product-id="2" data-description="High-quality wireless headphones with noise cancellation.">
+      <div class="dish-card" data-product-id="2"
+        data-description="High-quality wireless headphones with noise cancellation.">
         <img src="Bluetooth Headphones 5.jpg" alt="Bluetooth Headphones">
         <div class="product-info">
           <h3>Bluetooth Headphones</h3>
@@ -147,7 +159,8 @@
           <button onclick="showProductModal(this)">Buy Now</button>
         </div>
       </div>
-      <div class="dish-card" data-product-id="15" data-description="Premium Bluetooth headphones with long battery life.">
+      <div class="dish-card" data-product-id="15"
+        data-description="Premium Bluetooth headphones with long battery life.">
         <img src="Bluetooth Headphones.jpg" alt="Bluetooth Headphones">
         <div class="product-info">
           <h3>Bluetooth Headphones</h3>
@@ -155,7 +168,8 @@
           <button onclick="showProductModal(this)">Buy Now</button>
         </div>
       </div>
-      <div class="dish-card" data-product-id="16" data-description="Portable Bluetooth speakers with high-quality sound.">
+      <div class="dish-card" data-product-id="16"
+        data-description="Portable Bluetooth speakers with high-quality sound.">
         <img src="Bluuetooth Speakers .jpg" alt="Bluetooth Speakers">
         <div class="product-info">
           <h3>Bluetooth Speakers</h3>
@@ -779,7 +793,8 @@
           <button onclick="showProductModal(this)">Buy Now</button>
         </div>
       </div>
-      <div class="dish-card" data-product-id="94" data-description="High-performance Vivo V50e smartphone with 8GB RAM.">
+      <div class="dish-card" data-product-id="94"
+        data-description="High-performance Vivo V50e smartphone with 8GB RAM.">
         <img src="Vivo V50e 8Gb 256 Gb.jpg" alt="Vivo V50e 8GB 256GB">
         <div class="product-info">
           <h3>Vivo V50e 8GB 256GB</h3>
@@ -810,7 +825,8 @@
   <div id="productModal" style="margin-bottom: 5%; justify-content: center;" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
-      <div class="product-details" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
+      <div class="product-details"
+        style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
         <img id="modalImage" src="" alt="Product Image" style="max-width:300px; margin: 5%; border-radius:8px;">
         <h2 id="modalTitle"></h2>
         <p class="price" id="modalPrice"></p>
@@ -839,8 +855,10 @@
           <h4 id="contact-heading">📞 Contact Me</h4>
           <div class="contact-container">
             <p><strong>📩 Email:</strong> <a href="mailto:bhelavevicky66@gmail.com">vickybhelave@gmail.com</a></p>
-            <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/vicky-bhelave-788718372" target="_blank">vicky-bhelave</a></p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/__vic_ky__302" target="_blank">@__vic_ky__302</a></p>
+            <p><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/vicky-bhelave-788718372"
+                target="_blank">vicky-bhelave</a></p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/__vic_ky__302"
+                target="_blank">@__vic_ky__302</a></p>
           </div>
         </section>
       </div>
@@ -854,4 +872,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
